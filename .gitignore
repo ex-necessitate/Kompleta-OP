@@ -1,5 +1,6 @@
 okładka/
 Kompleta_1911/
+Backup/
 # . Globalne zasady ignorowania plików tymczasowych LaTeX-a
 # (będą działać we wszystkich podfolderach, które śledzisz)
 *.aux
