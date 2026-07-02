@@ -1,0 +1,92 @@
+% !TEX program = LuaLaTeX
+\documentclass[10pt,a5paper,twoside]{extbook}
+
+\usepackage[osf,p]{libertine}
+\usepackage{gregoriotex}
+
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[autostyle=true]{csquotes}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{geometry}
+
+\usepackage{titlesec}
+
+\usepackage{fontspec}
+\setmainfont{Book Antiqua}
+
+\usepackage{etoolbox}
+
+\input{commands.tex}
+\input{style.tex}
+
+\title{Kompleta\\Modlitwa wieczorna wedle liturgii dominikańskiej\\Rzym, 1911}
+\author{br. Kacper Osika OP}
+\date{\today}
+\begin{document}
+\maketitle
+
+% \include{Sections/Wprowadzenie}
+
+\chapter{Modlitwy stałe}
+\input{sections/stałe/modlitwa_przed_oficjum.tex}
+\input{sections/stałe/modlitwy_wstepne.tex}
+\section*{Psalmy}
+\comm{Psalmy z odpowiedniego dnia: s. \pageref{ch:psalterz}.}
+\input{sections/stałe/kapitulum.tex}
+\input{sections/stałe/hymn.tex}
+\input{sections/stałe/kantyk_symeona.tex}
+\gresetinitiallines{0}
+\input{sections/stałe/modlitwy_dodatkowe.tex}
+\input{sections/stałe/modlitwy_końcowe.tex}
+\input{sections/stałe/procesja.tex}
+\input{sections/stałe/modlitwa_po_komplecie.tex}
+\chapter{Psałterz}
+\label{ch:psalterz}
+\gresetinitiallines{1}
+\input{sections/psalmodia/nd.tex}\\
+\input{sections/psalmodia/pn.tex}\\
+\input{sections/psalmodia/wt.tex}\\
+\input{sections/psalmodia/sr.tex}\\
+\input{sections/psalmodia/czw.tex}\\
+\input{sections/psalmodia/pt.tex}\\
+\input{sections/psalmodia/sb.tex}
+
+% \chapter{Teksty zmienne}
+
+% \chapter{Kantyk Symeona}
+% \label{ch:kantyk_symeona}
+
+% \section*{Pierwsze zakończenie pierwszego tonu}
+% \label{nt:nunc_dimittis_i_a}
+% \section*{Drugie zakończenie pierwszego tonu}
+% \label{nt:nunc_dimittis_i_b}
+% \section*{Trzecie zakończenie pierwszego tonu}
+% \label{nt:nunc_dimittis_i_c}
+% \section*{Ton drugi}
+% \label{nt:nunc_dimittis_ii}
+% \section*{Pierwsze zakończenie trzeciego tonu}
+% \label{nt:nunc_dimittis_iii_a}
+% \section*{Drugie zakończenie trzeciego tonu}
+% \label{nt:nunc_dimittis_iii_b}
+% \section*{Pierwsze zakończenie czwartego tonu}
+% \label{nt:nunc_dimittis_iv_a}
+% \section*{Drugie zakończenie czwartego tonu}
+% \label{nt:nunc_dimittis_iv_b}
+% \section*{Ton piąty}
+% \label{nt:nunc_dimittis_v}
+% \section*{Ton szósty}
+% \label{nt:nunc_dimittis_vi}
+% \section*{Pierwsze zakończenie siódmego tonu}
+% \label{nt:nunc_dimittis_vii_a}
+% \section*{Drugie zakończenie siódmego tonu}
+% \label{nt:nunc_dimittis_vii_b}
+% \section*{Pierwsze zakończenie ósmego tonu}
+% \label{nt:nunc_dimittis_viii_a}
+% \section*{Drugie zakończenie ósmego tonu}
+% \label{nt:nunc_dimittis_viii_b}
+% \section*{Trzecie zakończenie ósmego tonu}
+% \label{nt:nunc_dimittis_viii_c}
+
+\end{document}
